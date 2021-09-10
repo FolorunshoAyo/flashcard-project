@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Flashcards Project</title>
+  </head>
+  <body class="bg-gray">
+      <div class="container-fluid">
+          <div class="container py-3">
+              <h4>Flashcards</h4>
+              <button class="btn btn-outline-warning mb-3" id="addQuestion">Add Question</button>
+
+              <div class="container">
+                    <div class="feedback alert text-center w-50 mx-auto text-capitalize">
+                        feedback message
+                    </div>
+                  <div class="row">
+                      <div class="col col-lg-8 border border-warning pt-2 hide formContainer">
+                          <button type="button" id="close-btn" class="btn btn-outline-warning float-right">&cross;</button>
+                          <form class="clear" id="flashForm">
+                              <div class="form-group">
+                                  <label for="question">
+                                      Question
+                                  </label>
+                                  <textarea id="questionInput" class="form-control" cols="30" rows="2">
+
+                                  </textarea>
+                              </div>
+                              <div class="form-group">
+                                  <label for="answer">Answer</label>
+                                  <textarea id="answerInput" class="form-control" cols="30" rows="2"></textarea>
+                              </div>
+                              <button type="submit" class="d-block btn btn-outline-success mb-3 w-50">save</button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="row my-5 justify-content-between align-items-start itemList">
+                      <!-- <div class="col-lg-3 item border border-dark py-3 m-1 bg-white">
+                          <h1 class="flash-header">Example</h1>
+                          <p class="hide flash-content"></p>
+                          <p><a href="#" class="toggleAnswer">Show/Hide Answer</a></p>
+                          <button class="btn btn-outline-success float-left flash-button edit-item">EDIT</button>
+                          <button class="btn btn-outline-warning float-right flashbutton delete-item">DELETE</button>
+                      </div> -->
+                  </div>
+                  <button type="button" class="d-block btn btn-outline-danger hide my-3 mx-auto text-capitalize" id="clear-list">clear items</button>
+              </div>    
+          </div>
+      </div>
+    <!-- JQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

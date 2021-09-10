@@ -1,0 +1,21 @@
+.bg-gray{
+    background-color: rgb(235, 227, 227);
+}
+.clear{
+    clear: right;
+}
+.hide{
+    display: none;
+}
+.feedback{
+    display: none;
+}
+.showItem{
+    display: block;
+}
+.flash-content{
+    font-size: 1em;
+}
+#questionInput, #answerInput{
+    text-transform: capitalize;
+}
